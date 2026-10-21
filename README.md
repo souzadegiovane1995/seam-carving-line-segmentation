@@ -2,6 +2,8 @@
 
 This algorithm segments handwritten text lines from the IAM dataset using seam carving.
 
+The idea of combining the horizontal projection profile with seam carving is inspired by [Das and Panda (2023)](https://doi.org/10.1016/j.rineng.2023.101110); the implementation and processing steps differ from the original work.
+
 ## Pipeline
 
 1. **Region of Interest Extraction:** Crops the handwritten region between the last two horizontal divider lines of the form.
@@ -43,6 +45,7 @@ This project uses the [IAM Handwriting Database](https://fki.tic.heia-fr.ch/data
 
 ## References
 
+- M. Das and M. Panda. *Seam carving, horizontal projection profile and contour tracing for line and word segmentation of language independent handwritten documents.* Results in Engineering, 18:101110, 2023. https://doi.org/10.1016/j.rineng.2023.101110
 - U.-V. Marti and H. Bunke. *The IAM-database: an English sentence database for offline handwriting recognition.* International Journal on Document Analysis and Recognition, 5:39–46, 2002.
 - S. Avidan and A. Shamir. *Seam Carving for Content-Aware Image Resizing.* ACM Transactions on Graphics (SIGGRAPH), 2007.
 
